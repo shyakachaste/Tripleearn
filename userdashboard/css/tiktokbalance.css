@@ -1,0 +1,49 @@
+@import url('dashboard.css');
+
+.tiktokbalancecontainer {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 100%;
+    text-align: center;
+    margin: 30px;
+    margin-left: 100px;
+}
+.header {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.content {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.amount-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.amount-input input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    margin: 0 5px;
+}
+.amount-input span {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+.submit-btn {
+    background-color: #7f5af0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}

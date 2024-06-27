@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px;
+}
+
+.illustration {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+}
+
+.login-form {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-form h2 {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.login-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.password-container input[type="password"] {
+    flex: 1;
+}
+
+.password-container button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #6200ea;
+    cursor: pointer;
+    bottom: 25px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+
+.login-form button[type="submit"] {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.create-account {
+    margin-top: 20px;
+}
+
+.create-account a {
+    color: #6200ea;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .illustration img {
+        display: none;
+    }
+
+    .login-form {
+        order: 1;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripleearn Signup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="assets/illustration2.png" alt="Illustration">
+        </div>
+        <div class="form-section">
+            <h4>Create your account</h4>
+            <p>Enter your personal details to create account</p>
+            <form>
+                <label>Your User Name</label>
+                <input type="text" placeholder="Username" required>
+                <label>Email Address</label>
+                <input type="email" placeholder="Test@gmail.com" required>
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter mobile" required>
+                <label>Country</label>
+                <select id="country" required class="country"></select>
+                <label>Password</label>
+                <input type="password" placeholder="*********" required>
+                <div class="check">
+                <input type="checkbox" id="checkbox1" required>
+                <label class="text-muted" for="checkbox1">Agree with<a class="ms-2" href="#"> Privacy Policy</a></label>
+                </div>
+                <input class="btn" type="submit">
+            </form>
+            <p class="mt-4 mb-0 text-center">Already have an account?<a class="ms-2" href="login.html"> Sign in</a></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
